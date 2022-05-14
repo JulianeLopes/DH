@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView_desafio2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-zS-oTp">
+                                <rect key="frame" x="0.0" y="154" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-Jj-qYb">
+                                <rect key="frame" x="30" y="503" width="61" height="30"/>
+                                <state key="normal" title="Cancelar"/>
+                                <connections>
+                                    <action selector="botaoCancelar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsH-WQ-GeC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDt-1g-ghC">
+                                <rect key="frame" x="148" y="431" width="118" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXG-w5-883">
+                                <rect key="frame" x="302" y="503" width="41" height="30"/>
+                                <state key="normal" title="Iniciar"/>
+                                <connections>
+                                    <action selector="botaoIniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nu2-ik-mqy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Et1-Jj-qYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2Sk-rp-dtL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uXG-w5-883" secondAttribute="trailing" constant="71" id="3i9-64-aHF"/>
+                            <constraint firstItem="uXG-w5-883" firstAttribute="leading" secondItem="Et1-Jj-qYb" secondAttribute="trailing" constant="211" id="Nqd-1k-kEO"/>
+                            <constraint firstItem="Et1-Jj-qYb" firstAttribute="top" secondItem="UH1-zS-oTp" secondAttribute="bottom" constant="133" id="YeB-5E-1CX"/>
+                            <constraint firstItem="pDt-1g-ghC" firstAttribute="top" secondItem="UH1-zS-oTp" secondAttribute="bottom" constant="61" id="bIy-iw-GeD"/>
+                            <constraint firstItem="uXG-w5-883" firstAttribute="top" secondItem="UH1-zS-oTp" secondAttribute="bottom" constant="133" id="dbC-Gm-sqB"/>
+                            <constraint firstItem="UH1-zS-oTp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fQp-ee-xMb"/>
+                            <constraint firstItem="UH1-zS-oTp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jhM-ch-5BN"/>
+                            <constraint firstItem="UH1-zS-oTp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="ksn-vb-1Zs"/>
+                            <constraint firstItem="pDt-1g-ghC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="l68-DH-U0m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pDt-1g-ghC" secondAttribute="trailing" constant="148" id="oJC-cL-MWg"/>
+                            <constraint firstItem="uXG-w5-883" firstAttribute="leading" secondItem="Et1-Jj-qYb" secondAttribute="trailing" constant="211" id="pL3-vs-pR5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="pDt-1g-ghC" id="p2b-OY-nbh"/>
+                        <outlet property="pickerView" destination="UH1-zS-oTp" id="DOJ-wV-xZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+</document>

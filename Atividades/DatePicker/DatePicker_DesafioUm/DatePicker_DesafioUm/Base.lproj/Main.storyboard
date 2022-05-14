@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DatePicker_DesafioUm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n95-Hr-kPO">
+                                <rect key="frame" x="20" y="59" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hug-Z6-T89"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gvh-zA-Io5">
+                                <rect key="frame" x="20" y="111" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="LPB-KC-mBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ikr-Sk-8Cn">
+                                <rect key="frame" x="0.0" y="231" width="414" height="162"/>
+                                <connections>
+                                    <action selector="didChangeDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="vqA-CZ-k47"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqE-h1-402">
+                                <rect key="frame" x="20" y="501" width="374" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="OZ5-Ar-iQq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7E-vE-dxR">
+                                <rect key="frame" x="20" y="535" width="374" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="gww-Hg-IIZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-0t-tji">
+                                <rect key="frame" x="20" y="566" width="374" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Blj-15-KGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ikr-Sk-8Cn" secondAttribute="bottom" constant="469" id="01x-ZE-YHi"/>
+                            <constraint firstItem="E7E-vE-dxR" firstAttribute="top" secondItem="qqE-h1-402" secondAttribute="bottom" constant="8" id="5cl-WR-bDJ"/>
+                            <constraint firstItem="qqE-h1-402" firstAttribute="trailing" secondItem="E7E-vE-dxR" secondAttribute="trailing" id="7ZN-5e-zxP"/>
+                            <constraint firstItem="n95-Hr-kPO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8zS-3S-Ifi"/>
+                            <constraint firstItem="qqE-h1-402" firstAttribute="leading" secondItem="gvh-zA-Io5" secondAttribute="leading" id="9L7-pJ-bom"/>
+                            <constraint firstItem="E7E-vE-dxR" firstAttribute="leading" secondItem="Uue-0t-tji" secondAttribute="leading" id="9WO-Ne-A9j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uue-0t-tji" secondAttribute="bottom" constant="269" id="B9h-8s-QwI"/>
+                            <constraint firstItem="gvh-zA-Io5" firstAttribute="centerX" secondItem="Ikr-Sk-8Cn" secondAttribute="centerX" id="H52-cl-xKe"/>
+                            <constraint firstItem="n95-Hr-kPO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="KKz-b5-eA6"/>
+                            <constraint firstItem="qqE-h1-402" firstAttribute="trailing" secondItem="gvh-zA-Io5" secondAttribute="trailing" id="LEi-uo-pOZ"/>
+                            <constraint firstItem="Ikr-Sk-8Cn" firstAttribute="top" secondItem="gvh-zA-Io5" secondAttribute="bottom" constant="86" id="NfT-4V-Yy1"/>
+                            <constraint firstItem="n95-Hr-kPO" firstAttribute="leading" secondItem="gvh-zA-Io5" secondAttribute="leading" id="URl-cw-tYW"/>
+                            <constraint firstItem="qqE-h1-402" firstAttribute="leading" secondItem="E7E-vE-dxR" secondAttribute="leading" id="VOh-6q-ybE"/>
+                            <constraint firstItem="Uue-0t-tji" firstAttribute="top" secondItem="E7E-vE-dxR" secondAttribute="bottom" constant="4" id="VYR-T7-Abd"/>
+                            <constraint firstItem="n95-Hr-kPO" firstAttribute="trailing" secondItem="gvh-zA-Io5" secondAttribute="trailing" id="dPy-LO-jOf"/>
+                            <constraint firstItem="E7E-vE-dxR" firstAttribute="trailing" secondItem="Uue-0t-tji" secondAttribute="trailing" id="dkT-6A-GhX"/>
+                            <constraint firstItem="gvh-zA-Io5" firstAttribute="top" secondItem="n95-Hr-kPO" secondAttribute="bottom" constant="18" id="ifv-hz-Fkz"/>
+                            <constraint firstItem="n95-Hr-kPO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qSr-kq-50w"/>
+                            <constraint firstItem="Ikr-Sk-8Cn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s78-0Q-yYH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="Uue-0t-tji" id="EYS-d5-kNX"/>
+                        <outlet property="datePicker" destination="Ikr-Sk-8Cn" id="ngw-AZ-dEc"/>
+                        <outlet property="nomeLabel" destination="qqE-h1-402" id="3iH-y8-a4o"/>
+                        <outlet property="nomeTextField" destination="n95-Hr-kPO" id="JRL-3K-Y8l"/>
+                        <outlet property="telefoneLabel" destination="E7E-vE-dxR" id="8ar-nv-ued"/>
+                        <outlet property="telefoneTextField" destination="gvh-zA-Io5" id="8D2-lt-lrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="112.5"/>
+        </scene>
+    </scenes>
+</document>

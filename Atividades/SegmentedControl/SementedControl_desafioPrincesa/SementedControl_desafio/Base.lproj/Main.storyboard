@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SementedControl_desafio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-9V-bOC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <segments>
+                                    <segment title="Bela "/>
+                                    <segment title="Branca de Neve"/>
+                                    <segment title="Cinderela"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bela" translatesAutoresizingMaskIntoConstraints="NO" id="LnQ-EX-cJG">
+                                <rect key="frame" x="87" y="311.5" width="240" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="O4I-t9-tia"/>
+                                    <constraint firstAttribute="width" constant="240" id="rwe-PW-iwt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GgJ-9V-bOC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Uu-l1-0Se"/>
+                            <constraint firstItem="LnQ-EX-cJG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M5v-j7-vTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GgJ-9V-bOC" secondAttribute="trailing" id="gzV-2C-fXF"/>
+                            <constraint firstItem="LnQ-EX-cJG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iDt-D5-tCu"/>
+                            <constraint firstItem="GgJ-9V-bOC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yw8-79-ZIR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagem" destination="LnQ-EX-cJG" id="I1k-oN-gqI"/>
+                        <outlet property="tableView" destination="8bC-Xf-vdC" id="zbP-mp-0AG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bela" width="940" height="1380"/>
+    </resources>
+</document>

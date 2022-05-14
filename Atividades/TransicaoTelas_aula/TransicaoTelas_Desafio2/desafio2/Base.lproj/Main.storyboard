@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mH-pE-UiS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela 1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="desafio2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLe-Wu-slA">
+                                <rect key="frame" x="139" y="433" width="136" height="30"/>
+                                <state key="normal" title="ir para segunda tela"/>
+                                <connections>
+                                    <segue destination="aJQ-Py-Y7F" kind="show" id="yDT-1s-l65"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iLe-Wu-slA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QdE-Wr-oSD"/>
+                            <constraint firstItem="iLe-Wu-slA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nY1-0y-lXd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 1" id="YhN-rS-kx7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897.10144927536237" y="112.5"/>
+        </scene>
+        <!--Tela 2-->
+        <scene sceneID="xAQ-lr-cdY">
+            <objects>
+                <viewController id="aJQ-Py-Y7F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rep-04-UVm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vB-k9-S7E">
+                                <rect key="frame" x="142.5" y="433" width="129" height="30"/>
+                                <state key="normal" title="ir para terceira tela"/>
+                                <connections>
+                                    <segue destination="O8t-iz-pqH" kind="show" id="Vcc-KU-OZm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7vB-k9-S7E" firstAttribute="centerY" secondItem="rep-04-UVm" secondAttribute="centerY" id="9Cn-48-bHc"/>
+                            <constraint firstItem="7vB-k9-S7E" firstAttribute="centerX" secondItem="rep-04-UVm" secondAttribute="centerX" id="cPJ-5G-i96"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JY1-gZ-KjD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 2" id="M7Y-jV-cn2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV3-0x-yn8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="113"/>
+        </scene>
+        <!--Tela 3-->
+        <scene sceneID="R2f-g5-epf">
+            <objects>
+                <viewController id="O8t-iz-pqH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PyO-89-bPj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50k-uC-Jnz">
+                                <rect key="frame" x="166" y="433" width="82" height="30"/>
+                                <state key="normal" title="terceira tela"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="50k-uC-Jnz" firstAttribute="centerX" secondItem="PyO-89-bPj" secondAttribute="centerX" id="4SC-i6-qC1"/>
+                            <constraint firstItem="50k-uC-Jnz" firstAttribute="centerY" secondItem="PyO-89-bPj" secondAttribute="centerY" id="8m5-cQ-eDO"/>
+                            <constraint firstItem="50k-uC-Jnz" firstAttribute="centerY" secondItem="PyO-89-bPj" secondAttribute="centerY" id="VRh-bQ-Lq2"/>
+                            <constraint firstItem="50k-uC-Jnz" firstAttribute="centerX" secondItem="PyO-89-bPj" secondAttribute="centerX" id="vrf-k0-shb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WvJ-Jh-esH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela 3" id="dE2-Dh-jYe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3p0-Ul-57T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2632" y="113"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mmn-Ww-rt9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2mH-pE-UiS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SU3-63-tNm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PUH-0W-6Vc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQ2-oS-KcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="112.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizer_Desafio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE9-nb-aXN">
+                                <rect key="frame" x="10" y="64" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="icf-8N-gz2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-cR-aZg">
+                                <rect key="frame" x="10" y="134" width="394" height="161"/>
+                                <color key="backgroundColor" red="0.96219572882433091" green="1" blue="0.21852421334320404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfn-X9-2WC">
+                                <rect key="frame" x="10" y="320" width="394" height="162"/>
+                                <color key="backgroundColor" red="0.2092276711814639" green="1" blue="0.24046455021615942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPH-fE-bDJ">
+                                <rect key="frame" x="10" y="507" width="394" height="181"/>
+                                <color key="backgroundColor" red="0.31269014170702003" green="0.36006237134421748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uPH-fE-bDJ" firstAttribute="top" secondItem="bfn-X9-2WC" secondAttribute="bottom" constant="25" id="CGX-5d-4PP"/>
+                            <constraint firstItem="bfn-X9-2WC" firstAttribute="trailing" secondItem="ITc-cR-aZg" secondAttribute="trailing" id="DoG-DJ-sZj"/>
+                            <constraint firstItem="rE9-nb-aXN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="J7s-gF-Wvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rE9-nb-aXN" secondAttribute="trailing" constant="10" id="JQH-1l-h4t"/>
+                            <constraint firstItem="bfn-X9-2WC" firstAttribute="top" secondItem="ITc-cR-aZg" secondAttribute="bottom" constant="25" id="MDE-QS-Y0a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITc-cR-aZg" secondAttribute="bottom" constant="567" id="QHz-Xc-E5N"/>
+                            <constraint firstItem="bfn-X9-2WC" firstAttribute="leading" secondItem="ITc-cR-aZg" secondAttribute="leading" id="XIn-fR-cLR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uPH-fE-bDJ" secondAttribute="bottom" constant="174" id="XgC-I7-Saf"/>
+                            <constraint firstItem="ITc-cR-aZg" firstAttribute="top" secondItem="rE9-nb-aXN" secondAttribute="bottom" constant="30" id="Xvm-dC-5Fo"/>
+                            <constraint firstItem="ITc-cR-aZg" firstAttribute="top" secondItem="rE9-nb-aXN" secondAttribute="bottom" constant="30" id="aji-TS-oVp"/>
+                            <constraint firstItem="bfn-X9-2WC" firstAttribute="leading" secondItem="uPH-fE-bDJ" secondAttribute="leading" id="drd-kQ-B5v"/>
+                            <constraint firstItem="bfn-X9-2WC" firstAttribute="trailing" secondItem="uPH-fE-bDJ" secondAttribute="trailing" id="fPl-L6-Hdy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITc-cR-aZg" secondAttribute="trailing" constant="10" id="kCE-n8-Mqk"/>
+                            <constraint firstAttribute="bottom" secondItem="bfn-X9-2WC" secondAttribute="bottom" constant="414" id="olK-xM-nqe"/>
+                            <constraint firstItem="rE9-nb-aXN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rxw-hz-wdz"/>
+                            <constraint firstItem="ITc-cR-aZg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="y15-yl-OfO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="longPressGesture" destination="uPH-fE-bDJ" id="bvr-zg-kaQ"/>
+                        <outlet property="resultadoLabel" destination="rE9-nb-aXN" id="5Mf-Oc-WgY"/>
+                        <outlet property="swipeGesture" destination="bfn-X9-2WC" id="9AJ-Xa-xZs"/>
+                        <outlet property="tapGesture" destination="ITc-cR-aZg" id="RVy-CG-gyz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="113"/>
+        </scene>
+    </scenes>
+</document>
